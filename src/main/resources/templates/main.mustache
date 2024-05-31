@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--# session에서 들고 온 거-->
+<h1>메인(인증된) 페이지 : {{sessionUser.username}} 유저</h1>
+<hr>
+<!--# request에서 들고온 값-->
+{{#shopList}}
+    <div>
+        상품이름 : {{name}} <br>
+        가격 : {{price}} <br>
+        재고 : {{qty}} <br>
+        <hr>
+    </div>
+{{/shopList}}
+</body>
+</html>
